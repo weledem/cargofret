@@ -1,0 +1,7 @@
+site_homepage:
+    path:     /
+    defaults: { _controller: SiteBundle:Site:index }
+
+client:
+    path:     /client
+    defaults: { _controller: SiteBundle:Site:client }

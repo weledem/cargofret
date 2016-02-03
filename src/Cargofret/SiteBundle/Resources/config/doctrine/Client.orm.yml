@@ -1,0 +1,35 @@
+Cargofret\SiteBundle\Entity\Client:
+    type: entity
+    table: null
+    repositoryClass: Cargofret\SiteBundle\Repository\ClientRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nomClient:
+            type: string
+            length: 255
+        prenomClient:
+            type: string
+            length: 255
+        adresseClient:
+            type: string
+            length: 255
+        cpClient:
+            type: string
+            length: 255
+        villeClient:
+            type: string
+            length: 255
+        telClient:
+            type: string
+            length: 255
+        mailClient:
+            type: string
+            length: 255
+        dateClient:
+            type: date
+    lifecycleCallbacks: {  }

@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+		{% block title %}Cargofret{% endblock %}
+{% block body %} 
+    
+	{% include "SiteBundle:Include:header.html.twig"%}
+		
+		<div class="container">
+
+			<div class="row">
+			   {{ form_start(form) }}
+			{{ form_label(form.nomClient) }} <br>
+			{{ form_widget(form.nomClient) }} <br><br>
+			
+			{{ form_label(form.prenomClient) }} <br>
+			{{ form_widget(form.prenomClient) }}<br><br>
+			
+			
+			{{ form_label(form.adresseClient) }} <br>
+			{{ form_widget(form.adresseClient) }}<br><br>
+			
+			
+			{{ form_label(form.cpClient) }} <br>
+			{{ form_widget(form.cpClient) }}<br><br>
+			
+			
+			{{ form_label(form.villeClient) }}<br> 
+			{{ form_widget(form.villeClient) }}<br><br>
+			
+			{{ form_label(form.mailClient) }}<br> 
+			{{ form_widget(form.mailClient) }}<br><br>
+			
+			{{ form_label(form.telClient) }}<br> 
+			{{ form_widget(form.telClient) }}<br><br>
+			
+			{{ form_label(form.dateClient) }}<br> 
+			{{ form_widget(form.dateClient) }}<br><br>
+			
+			 {{ form_widget(form.Enregistrer, {'attr': {'class': 'btn btn-primary'}}) }}
+	
+		{{ form_rest(form.nomClient) }}
+			
+    {{ form_end(form) }}
+			</div>
+	    </div>
+		{% include "SiteBundle:Include:footer.html.twig"%}
+			{% endblock %}

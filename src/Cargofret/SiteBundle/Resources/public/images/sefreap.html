@@ -1,0 +1,26 @@
+<html>
+	<head>
+	 
+		<script type="text/javascript"> 
+		var Img=new Array; 
+		Img[0]="reception.jpg"; 
+		Img[1]="depart.jpg"; 
+		Img[2]="conforme.jpg"; 
+		Img[3]="carton.jpg"; 
+		var i=0;
+		 
+		 
+		function change(index) { 
+		document.getElementById('pic').src=Img[index]; 
+		i++; 
+		if (i < Img.length) 
+		{ 
+		setTimeout('change(i)',1500); } } 
+		setTimeout('change(i)',1500);
+		</script>
+	</head>
+	
+	<body>
+		<img src="reception.jpg" id="pic">
+	</body>
+</html>
